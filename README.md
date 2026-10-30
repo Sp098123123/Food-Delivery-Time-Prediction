@@ -1,41 +1,51 @@
 # 🍔 Food Delivery Time Prediction
 
-## Project Overview
-This Machine Learning project predicts food delivery time based on distance, weather conditions, traffic level, time of day, vehicle type, preparation time, and courier experience.
+### Machine Learning | Python | Scikit-learn | Streamlit
 
-## Technologies Used
+## 📌 Project Overview
+This project predicts estimated food delivery time based on distance, weather, traffic conditions, time of day, vehicle type, food preparation time, and courier experience.
+
+The application uses machine learning regression algorithms and provides an interactive interface built with Streamlit.
+
+## 🎯 Project Objectives
+- Predict estimated food delivery time.
+- Analyze factors affecting delivery duration.
+- Compare different regression algorithms.
+- Build an interactive prediction application.
+
+## 🛠️ Technologies Used
 - Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Pandas and NumPy
+- Matplotlib and Seaborn
 - Scikit-learn
 - Streamlit
 
-## Machine Learning Algorithms
+## ⚙️ Project Workflow
+1. Data Cleaning and Preprocessing
+2. Exploratory Data Analysis
+3. Missing Value Handling
+4. Categorical Encoding
+5. Feature Engineering
+6. Train-Test Split
+7. Regression Model Training
+8. Cross-Validation
+9. Hyperparameter Tuning
+10. Residual Analysis
+11. Feature Importance Analysis
+12. Prediction and Deployment
+
+## 🤖 Machine Learning Algorithms
 - Linear Regression
 - Ridge Regression
 - Random Forest Regressor
 
-## Project Workflow
-1. Data Cleaning and Preprocessing
-2. Exploratory Data Analysis (EDA)
-3. Missing Value Handling
-4. Categorical Feature Encoding
-5. Feature Engineering
-6. Train-Test Split
-7. Model Training and Comparison
-8. Cross-Validation and Hyperparameter Tuning
-9. Model Evaluation
-10. Streamlit Application
-
-## Evaluation Metrics
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
+## 📊 Evaluation Metrics
+- MAE
+- MSE
+- RMSE
 - R² Score
 
-## How to Run the Project
+## 🚀 Run the Application
 
 Install dependencies:
 
@@ -43,27 +53,21 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application:
+Run Streamlit:
 
 ```bash
 streamlit run app.py
 ```
 
-## Project Structure
+## 📁 Project Files
+- `app.py` – Streamlit application
+- `food_delivery_model.pkl` – Trained machine learning pipeline
+- `requirements.txt` – Required dependencies
+- Jupyter Notebook – Complete development and analysis
+- PDF – Notebook documentation
 
-```text
-Food-Delivery-Time-Prediction/
-│
-├── Food_Delivery_Prediction/
-│   ├── app.py
-│   ├── food_delivery_model.pkl
-│   └── requirements.txt
-│
-└── README.md
-```
-
-## Author
+## 👨‍💻 Author
 Shubham Patel
 
-## Note
-This project is developed for educational and Machine Learning practice purposes.
+## ⚠️ Disclaimer
+This project is developed for educational and machine learning practice purposes. Predictions are estimates and are not guaranteed delivery times.
