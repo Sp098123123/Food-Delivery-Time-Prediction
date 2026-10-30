@@ -14,9 +14,18 @@ with open(BASE_DIR / "food_delivery_model.pkl", "rb") as file:
 st.markdown("""
 <style>
 .stApp {
-    background-color: #FFF8F0;
-}
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.35),
+            rgba(20, 20, 20, 0.45)
+        ),
+        url("https://raw.githubusercontent.com/Sp098123123/Food-Delivery-Time-Prediction/main/Food_Delivery_Prediction/delivery_bg.jpg");
 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .block-container {
     max-width: 1100px;
     padding-top: 2rem;
