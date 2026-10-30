@@ -7,6 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 with open(BASE_DIR / "food_delivery_model.pkl", "rb") as file:
     model = pickle.load(file)
+    st.set_page_config(
     page_title="Food Delivery Prediction",
     page_icon="🍔"
 )
