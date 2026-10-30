@@ -62,6 +62,18 @@ div[data-testid="stMetric"] {
 section[data-testid="stSidebar"] {
     background-color: #FCEBDD;
 }
+div[data-testid="stAlert"] {
+    background-color: #14532D !important;
+    color: white !important;
+    border: 2px solid #86EFAC !important;
+    border-radius: 12px !important;
+}
+
+div[data-testid="stAlert"] p {
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 st.markdown("""
