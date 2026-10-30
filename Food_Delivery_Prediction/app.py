@@ -2,19 +2,67 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import pickle
+st.set_page_config(
+    page_title="Food Delivery Prediction",
+    page_icon="🍔"
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 
 with open(BASE_DIR / "food_delivery_model.pkl", "rb") as file:
     model = pickle.load(file)
-    st.set_page_config(
-    page_title="Food Delivery Prediction",
-    page_icon="🍔"
-)
+st.markdown("""
+<style>
+.stApp {
+    background-color: #FFF8F0;
+}
 
-st.title("🍔 Food Delivery Time Prediction")
-st.write("Predict estimated food delivery time using Machine Learning.")
+.block-container {
+    max-width: 1100px;
+    padding-top: 2rem;
+}
 
+h1, h2, h3 {
+    color: #392719;
+}
+
+p, label {
+    color: #594638;
+}
+
+.stButton > button {
+    background-color: #F07836;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.stButton > button:hover {
+    background-color: #D95D20;
+    color: white;
+}
+
+div[data-testid="stMetric"] {
+    background-color: white;
+    border: 1px solid #F0DFD0;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+section[data-testid="stSidebar"] {
+    background-color: #FCEBDD;
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<h1 style="text-align:center; color:#E66B2E;">
+🍔 Food Delivery Time Predictor
+</h1>
+<p style="text-align:center; font-size:17px; color:#755B48;">
+Smart delivery time estimation powered by Machine Learning
+</p>
+""", unsafe_allow_html=True)
 st.divider()
 
 st.subheader("Enter Delivery Details")
