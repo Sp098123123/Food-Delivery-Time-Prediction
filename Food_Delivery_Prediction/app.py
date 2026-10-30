@@ -1,11 +1,11 @@
-
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import pickle
 
-with open("food_delivery_model.pkl", "rb") as file:
-    model = pickle.load(file)
+BASE_DIR = Path(__file__).resolve().parent
 
+with open(BASE_DIR / "food_delivery_model.pkl", "rb") as file:
 st.set_page_config(
     page_title="Food Delivery Prediction",
     page_icon="🍔"
